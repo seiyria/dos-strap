@@ -15,7 +15,7 @@ encoding:         UTF-8
 
 # Custom vars
 current_version:  3.3.5
-repo:             https://github.com/twbs/bootstrap
+repo:             https://github.com/seiyria/dos-strap
 sass_repo:        https://github.com/twbs/bootstrap-sass
 
 download:

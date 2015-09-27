@@ -120,45 +120,6 @@ h4 code {
   outline: none;
 }
 
-
-/*
- * Main navigation
- *
- * Turn the `.navbar` at the top of the docs purple.
- */
-
-.bs-docs-nav {
-  margin-bottom: 0;
-  background-color: #fff;
-  border-bottom: 0;
-}
-.bs-home-nav .bs-nav-b {
-  display: none;
-}
-.bs-docs-nav .navbar-brand,
-.bs-docs-nav .navbar-nav > li > a {
-  font-weight: 500;
-  color: #563d7c;
-}
-.bs-docs-nav .navbar-nav > li > a:hover,
-.bs-docs-nav .navbar-nav > .active > a,
-.bs-docs-nav .navbar-nav > .active > a:hover {
-  color: #463265;
-  background-color: #f9f9f9;
-}
-.bs-docs-nav .navbar-toggle .icon-bar {
-  background-color: #563d7c;
-}
-.bs-docs-nav .navbar-header .navbar-toggle {
-  border-color: #fff;
-}
-.bs-docs-nav .navbar-header .navbar-toggle:hover,
-.bs-docs-nav .navbar-header .navbar-toggle:focus {
-  background-color: #f9f9f9;
-  border-color: #f9f9f9;
-}
-
-
 /*
  * Footer
  *
@@ -315,162 +276,6 @@ h4 code {
   }
 }
 
-
-/*
- * Carbon ads
- *
- * Single display ad that shows on all pages (except homepage) in page headers.
- * The hella `!important` is required for any pre-set property.
- */
-
-.carbonad {
-  width: auto !important;
-  height: auto !important;
-  padding: 20px !important;
-  margin: 30px -15px -31px !important;
-  overflow: hidden; /* clearfix */
-  font-size: 13px !important;
-  line-height: 16px !important;
-  text-align: left;
-  background: transparent !important;
-  border: solid #866ab3 !important;
-  border-width: 1px 0 !important;
-}
-.carbonad-img {
-  margin: 0 !important;
-}
-.carbonad-text,
-.carbonad-tag {
-  display: block !important;
-  float: none !important;
-  width: auto !important;
-  height: auto !important;
-  margin-left: 145px !important;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-}
-.carbonad-text {
-  padding-top: 0 !important;
-}
-.carbonad-tag {
-  color: inherit !important;
-  text-align: left !important;
-}
-.carbonad-text a,
-.carbonad-tag a {
-  color: #fff !important;
-}
-.carbonad #azcarbon > img {
-  display: none; /* hide what I assume are tracking images */
-}
-
-@media (min-width: 480px) {
-  .carbonad {
-    width: 330px !important;
-    margin: 20px auto !important;
-    border-width: 1px !important;
-    border-radius: 4px;
-  }
-  .bs-docs-masthead .carbonad {
-    margin: 50px auto 0 !important;
-  }
-}
-
-@media (min-width: 768px) {
-  .carbonad {
-    margin-right: 0 !important;
-    margin-left: 0 !important;
-  }
-}
-
-@media (min-width: 992px) {
-  .carbonad {
-    position: absolute;
-    top: 0;
-    right: 15px; /* 15px instead of 0 since box-sizing */
-    width: 330px !important;
-    padding: 15px !important;
-    margin: 0 !important;
-  }
-  .bs-docs-masthead .carbonad {
-    position: static;
-  }
-}
-
-
-/*
- * Homepage featurettes
- *
- * Reasons to use Bootstrap, entries from the Expo, and more.
- */
-
-.bs-docs-featurette {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #555;
-  text-align: center;
-  background-color: #fff;
-  border-bottom: 1px solid #e5e5e5;
-}
-.bs-docs-featurette + .bs-docs-footer {
-  margin-top: 0;
-  border-top: 0;
-}
-
-.bs-docs-featurette-title {
-  margin-bottom: 5px;
-  font-size: 30px;
-  font-weight: normal;
-  color: #333;
-}
-.half-rule {
-  width: 100px;
-  margin: 40px auto;
-}
-.bs-docs-featurette h3 {
-  margin-bottom: 5px;
-  font-weight: normal;
-  color: #333;
-}
-.bs-docs-featurette-img {
-  display: block;
-  margin-bottom: 20px;
-  color: #333;
-}
-.bs-docs-featurette-img:hover {
-  color: #337ab7;
-  text-decoration: none;
-}
-.bs-docs-featurette-img img {
-  display: block;
-  margin-bottom: 15px;
-}
-
-@media (min-width: 480px) {
-  .bs-docs-featurette .img-responsive {
-    margin-top: 30px;
-  }
-}
-@media (min-width: 768px) {
-  .bs-docs-featurette {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-  .bs-docs-featurette-title {
-    font-size: 40px;
-  }
-  .bs-docs-featurette .lead {
-    max-width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .bs-docs-featurette .img-responsive {
-    margin-top: 0;
-  }
-}
-
-
 /*
  * Featured sites
  *
@@ -549,32 +354,36 @@ h4 code {
 .bs-docs-sidenav {
   margin-top: 20px;
   margin-bottom: 20px;
+  -webkit-box-shadow: 10px 10px #000;
+          box-shadow: 10px 10px #000;
+}
+
+.bs-docs-sidebar .nav {
+  background-color: #bbb;
+  border: 2px solid #000;
 }
 
 /* All levels of nav */
 .bs-docs-sidebar .nav > li > a {
   display: block;
   padding: 4px 20px;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 500;
-  color: #767676;
+  color: #000;
 }
 .bs-docs-sidebar .nav > li > a:hover,
 .bs-docs-sidebar .nav > li > a:focus {
   padding-left: 19px;
-  color: #563d7c;
+  color: #fff;
   text-decoration: none;
-  background-color: transparent;
-  border-left: 1px solid #563d7c;
+  background-color: #000;
 }
 .bs-docs-sidebar .nav > .active > a,
 .bs-docs-sidebar .nav > .active:hover > a,
 .bs-docs-sidebar .nav > .active:focus > a {
   padding-left: 18px;
   font-weight: bold;
-  color: #563d7c;
-  background-color: transparent;
-  border-left: 2px solid #563d7c;
+  color: #fff;
 }
 
 /* Nav: second level (shown on .active) */
@@ -861,7 +670,6 @@ h1[id] {
   padding-bottom: 10px;
   background-color: #eee;
   background-color: rgba(86,61,124,.15);
-  border: 1px solid #ddd;
   border: 1px solid rgba(86,61,124,.2);
 }
 
@@ -913,7 +721,6 @@ h1[id] {
   .bs-example {
     margin-right: 0;
     margin-left: 0;
-    background-color: #fff;
     border-color: #ddd;
     border-width: 1px;
     border-radius: 4px 4px 0 0;
@@ -991,11 +798,6 @@ h1[id] {
 .bs-example > .img-rounded,
 .bs-example > .img-thumbnail {
   margin: 5px;
-}
-
-/* Tables */
-.bs-example > .table-responsive > .table {
-  background-color: #fff;
 }
 
 /* Buttons */
@@ -1083,9 +885,6 @@ h1[id] {
 }
 
 /* Example modals */
-.bs-example-modal {
-  background-color: #f5f5f5;
-}
 .bs-example-modal .modal {
   position: relative;
   top: auto;
@@ -1135,7 +934,6 @@ h1[id] {
 /* Popovers */
 .bs-example-popover {
   padding-bottom: 24px;
-  background-color: #f9f9f9;
 }
 .bs-example-popover .popover {
   position: relative;
